@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 function Grid() {
-  //   const [box, setBox] = useState([9]);
   const [visible, setVisible] = useState(false);
   return (
     <div className="flex h-screen w-full justify-center items-center bg-black">
