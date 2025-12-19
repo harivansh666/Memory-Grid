@@ -1,7 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Grid() {
   const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setVisible(true);
+    }, 3000);
+  }, []);
   return (
     <div className="flex h-screen w-full justify-center items-center bg-black">
       <div className="grid  grid-cols-4 gap-2 p-2 bg-white  ">
